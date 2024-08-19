@@ -1,0 +1,873 @@
+/* *
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+
+    }
+body
+{
+    color: #ededed;
+    background-image: url(ken-cheung-x54kpaXOysA-unsplash.jpg);
+    background-size: cover;      
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh; 
+    margin: 0; 
+   
+}
+.first{
+    height: 100vh;
+    width: 500px;
+    height:500px;
+    background-size: cover;
+    margin-bottom: 125px;
+    margin-top: 20px;
+    scroll-margin-top: 250px;
+   
+}
+.header{
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    background-color: black;
+    }
+
+
+.logo{
+    font-size: 25px;
+    color: #fff;;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+ .ah{
+    
+    margin-left: 35px;
+}  
+ 
+
+ .navbar a {
+    display: inline-block;
+    font-size:25px;
+    color: #4f19bc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+    margin-left: 35px;
+    
+ }  
+.navbar a:hover{
+   color: rgb(199, 187, 222);
+
+}
+.HOME{
+  
+   width: 100%;
+   justify-content: space-between;
+   height:100vh;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   padding: 70px 10% 0; 
+   color: black;
+
+   
+   }
+
+.HOME-CO{
+    max-width: 600px;
+    padding-top: 250px; 
+    padding-bottom: 300px;
+} 
+.HOME-CO h3{
+    font-size: 32px;
+    font-weight:700;
+    animation: slidebutton is ease forwards;
+    animation-delay:.7s ;
+    opacity: 0px;
+
+}
+.HOME-CO h1{
+    font-size: 56px;
+    font-weight:700 ;
+    margin: -3px 0;
+
+}
+.HOME-CO p{
+    font-size: 24px;
+    font-weight:200;
+
+}
+.image{
+    background-image: url(car-removebg.png);
+
+}
+.image{
+    position: absolute; 
+    bottom: 200px; 
+    right:100px; 
+    border-radius: 50%;
+    border-image:linear-gradient(rgb(117, 65, 117),rgb(120, 120, 230)) 1 ;
+    
+
+}
+
+.image img {
+    width: 300px;  
+    height:350px; 
+    border: 5px solid ;
+    border-radius: 50%;
+   }
+.body{
+    font-size: 25px;
+    font-weight: 150;
+    align-items: center;
+        }
+.second{
+    height: 100vh;
+    color: black;
+   
+    width: 700px;
+    height:500px;
+    background-size: cover;
+   
+    display: flex;
+    align-items:center;
+    margin-bottom:200px ;
+   
+    margin-left: 100px;
+    
+    }
+.ty{
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-bottom: 200px;
+}
+.tag{
+    display: flex;
+    justify-content: center;
+   align-items:center;
+   flex-wrap: wrap;
+}
+.qw{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+   
+} 
+.qw img{
+    width: 45px;
+    height: auto;
+    transition: transform 0.3s;
+}
+.qw img:hover{
+    transform: scale(1.6);
+}
+.document{
+    height: 100vh;
+}
+.section{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.third{
+    height:500px;
+    width:600px;
+    padding: 75px 90px;
+    margin-left: 120px;
+    display: flex;
+    margin-bottom: 50px;
+    padding-top:30px;
+}
+.heading1{
+    text-align:center ;
+    text-decoration:underline ;
+    text-underline-offset: 3px;
+    text-decoration-thickness:2px;
+    margin-bottom:50px ;
+    
+}
+.bar{
+    font-size: 23px;
+}
+.third{
+    height: 100vh;
+}
+.radial-bar{
+    margin-top: -10px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}  
+.third{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+.technical-bars .bar{
+    margin: 40px 0 0;
+
+} 
+.technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.technical-bars .bar .information{
+    margin-bottom: 5px;
+}
+.technical-bars .bar .information span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s is linear forwards;
+    opacity: 0;
+}
+.technical-bars .bar .line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: aqua;
+    animation: animate is cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.technical-bars .bar .line span{
+    height: 100%;
+    background-color:#0ef ;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate is cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.line.html span{
+    width: 90%;
+} 
+.line.css span{
+    width: 90%;
+} 
+.line.javascript span{
+    width: 70%;
+} 
+.line.python span{
+    width: 30%;
+} 
+.line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: black;
+    color: bisque;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -28px;
+    animation: showtext 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.line.html span::after{
+    content:"90%"
+}
+.line.css span::after{
+    content:"90%"
+}
+.line.javascript span::after{
+    content:"70%"
+}
+.line.python span::after{
+    content:"30%"
+}
+.line span::before{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity:0 ;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+.radial-bar{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bar .radial-bar{
+    width:25%;
+    height:50px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform:translate(-50%, -50%) rotate(-90deg) ;
+    width: 50px;
+    height:50px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset:502;
+    stroke-linecap: round;
+    animation: animate-bar is linear forwards;
+}
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray:502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+
+}
+.path-1{animation: animate-path1 is the linear forwards;}
+.path-2{animation: animate-path2 is the linear forwards;}
+.path-3{animation: animate-path3 is the linear forwards;}
+.path-4{animation: animate-path4 is the linear forwards;}
+
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;;
+    }
+}
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 175;;
+    }
+}
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset:125;;
+    }
+}
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 75;;
+    }
+}
+.radial-bar .percentage{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.radial-bar .text{
+     width: 100%;
+     position: absolute;
+     text-align: center;
+     left: 50%;
+     bottom: -5px;
+     transform: translateX(-50px);
+     font-size: 17px;
+     font-weight: 500;
+     animation: showText 0.5s 1s linear forwards ;
+     opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}  
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}  
+@keyframes slideBotton {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}   */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+    background-image: url(ken-cheung-x54kpaXOysA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+.first {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    margin-bottom: 125px;
+    margin-top: 20px;
+    scroll-margin-top: 250px;
+}
+
+.header {
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #4f19bc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+    margin-left: 35px;
+}
+
+.navbar a:hover {
+    color: rgb(199, 187, 222);
+}
+
+.HOME {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    color: black;
+}
+
+.HOME-CO {
+    max-width: 600px;
+    padding-top: 250px;
+    padding-bottom: 300px;
+}
+
+.HOME-CO h3 {
+    font-size: 32px;
+    font-weight: 700;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+    opacity: 0;
+}
+
+.HOME-CO h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.HOME-CO p {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.image {
+    position: absolute;
+    bottom: 200px;
+    right: 100px;
+    border-radius: 50%;
+    border-image: linear-gradient(rgb(117, 65, 117), rgb(120, 120, 230)) 1;
+}
+
+.image img {
+    width: 300px;
+    height: 350px;
+    border: 5px solid;
+    border-radius: 50%;
+}
+
+.body {
+    font-size: 25px;
+    font-weight: 150;
+    align-items: center;
+}
+
+.second {
+    height: 100vh;
+    color: black;
+    width: 700px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.ty {
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-bottom: 200px;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.qw {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.qw img {
+    width: 45px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.qw img:hover {
+    transform: scale(1.6);
+}
+
+.document {
+    height: 100vh;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.third {
+    height: 500px;
+    width: 600px;
+    padding: 75px 90px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    height: 100vh;
+}
+
+.heading1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+    margin-bottom: 50px;
+}
+
+.bar {
+    font-size: 23px;
+}
+
+.technical-bars .bar {
+    margin: 40px 0 0;
+}
+
+.technical-bars .bar:first-child {
+    margin-top: 0;
+}
+
+.technical-bars .bar:last-child {
+    margin-bottom: 0;
+}
+
+.technical-bars .bar .information {
+    margin-bottom: 5px;
+}
+
+.technical-bars .bar .information span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s ease linear forwards;
+    opacity: 0;
+}
+
+.technical-bars .bar .line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: aqua;
+    animation: animate 1s cubic-bezier(1, 0, 0, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.technical-bars .bar .line span {
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.line.html span {
+    width: 90%;
+}
+
+.line.css span {
+    width: 90%;
+}
+
+.line.javascript span {
+    width: 70%;
+}
+
+.line.python span {
+    width: 30%;
+}
+
+.line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: black;
+    color: bisque;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -28px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.line.html span::after {
+    content: "90%";
+}
+
+.line.css span::after {
+    content: "90%";
+}
+
+.line.javascript span::after {
+    content: "70%";
+}
+
+.line.python span::after {
+    content: "30%";
+}
+
+.line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.radial-bar {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.radial-bar .radial-bar {
+    width: 25%;
+    height: 50px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.radial-bars .radial-bar svg {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 50px;
+    height: 50px;
+}
+
+.radial-bars .radial-bar .progress-bar {
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
+
+.radial-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.radial-bar .text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
